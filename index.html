@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Surprise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page active" id="page1">
+        <h1>Will you be my Valentine?</h1>
+        <img src="kitten.gif" alt="Cute Kitten" class="kitten">
+        <div class="buttons">
+            <button class="yes">YES</button>
+            <button class="no" id="noBtn">NO</button>
+        </div>
+    </div>
+
+    <div class="page" id="page2">
+        <h1>I KNOW YOU WILL :3</h1>
+        <img src="happy-kitten.gif" alt="Happy Kitten" class="kitten">
+        <div class="reasons-container"></div>
+        <button class="next" onclick="nextPage(3)">Next</button>
+    </div>
+
+    <div class="page" id="page3">
+        <h1>That Are The Reasons Why I Love You</h1>
+        <div class="cat-container"></div>
+        <img src="cat-heart.gif" alt="Cute cat holding heart" class="cat-heart">
+        <div class="reasons-container"></div>
+        <button class="next" onclick="nextPage(4)">Next</button>
+    </div>
+    
+
+    <div class="page" id="page4">
+        <h1>Our Memories</h1>
+        <div class="photo-gallery">
+            <div class="photo-frame"><img src="photo1.jpg" alt="Memory 1"></div>
+            <div class="photo-frame"><img src="photo2.jpg" alt="Memory 2"></div>
+            <div class="photo-frame"><img src="photo3.jpg" alt="Memory 3"></div>
+        </div>
+        <button class="next" onclick="nextPage(5)">Next</button>
+    </div>
+
+    <div class="page" id="page5">
+        <h1>Thank You for Being in My Life!</h1>
+        <p>You mean the world to me, and I am so grateful for every moment we share.</p>
+        <div class="cat-couple-container">
+            <img src="cat-couple.gif" alt="Cute cat couple" class="cat-couple">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

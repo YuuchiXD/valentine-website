@@ -1,0 +1,158 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  background-color: #fde2e4;
+  margin: 0;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #ff4d6d;
+}
+
+.page {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: opacity 1s ease-in-out;
+}
+
+.page.active {
+  display: flex;
+}
+
+.kitten {
+  width: 250px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.yes {
+  background-color: #ff4d6d;
+  color: white;
+}
+
+.no {
+  background-color: #ccc;
+  color: black;
+  position: absolute;
+}
+
+.reasons-container {
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #ffccd5;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reason-box {
+  background-color: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.photo-gallery {
+  display: flex;
+  gap: 15px;
+}
+
+.photo-frame img {
+  width: 150px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.photo-frame img:hover {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button.next {
+  margin-top: 20px;
+  background-color: #ff4d6d;
+  color: white;
+}
+.heart {
+  position: absolute;
+  color: #ff4d6d;
+  font-size: 20px;
+  animation: float 4s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes float {
+  0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+  }
+  50% {
+      transform: translateY(-200px) scale(1.2);
+      opacity: 0.6;
+  }
+  100% {
+      transform: translateY(-400px) scale(1);
+      opacity: 0;
+  }
+}
+.cat-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cat-heart {
+  width: 150px; /* Sesuaikan ukuran */
+  animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+.cat-couple-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cat-couple {
+  width: 200px; /* Sesuaikan ukuran */
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: scale(0.8);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
