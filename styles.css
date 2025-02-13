@@ -156,3 +156,36 @@ button.next {
       transform: scale(1);
   }
 }
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .kitten, .cat-heart, .cat-couple {
+    width: 150px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  button {
+    font-size: 1.2em;
+    padding: 8px 16px;
+    margin: 5px 0;
+  }
+
+  .reasons-container {
+    padding: 10px;
+  }
+
+  .photo-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo-frame img {
+    width: 100px;
+  }
+}
